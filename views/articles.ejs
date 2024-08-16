@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<% if (articles.length === 0) { %>
+    <h1>No articles found.</h1>
+<% } else { %> 
+    <ul style="list-style-type: none;">
+        <% for(var i = 0; i < articles.length; i++) { %>
+            <li>
+                <h4><%= name[i] %></h4>
+                <p><%= articles[i] %></p>
+            </li>
+        <% } %>
+    </ul>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

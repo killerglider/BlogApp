@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<!-- TODO : add a ejs tag that takes data from the submit thing that adds the article and use a locals variable to display that -->
+<h1>Home Page</h1>
+
+<form action="/articles" method="GET">
+    <input type="submit" value="Articles page" />
+</form>
+<form action="/Add" method="GET">
+    <input type="submit" value="Add new Article" />
+</form>
+<%- include("partials/footer.ejs") %>
